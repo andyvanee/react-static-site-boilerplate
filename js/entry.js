@@ -1,7 +1,6 @@
-
 var React = require('react')
 var Router = require('react-router')
-var Routes = require('./Routes.jsx')
+var Routes = require('../components/Routes.jsx')
 
 if (typeof document !== 'undefined') {
   var initialProps = JSON.parse(document.getElementById('initial-props').innerHTML)
@@ -16,4 +15,3 @@ module.exports = function render (locals, callback) {
     callback(null, '<!DOCTYPE html>' + html)
   })
 }
-

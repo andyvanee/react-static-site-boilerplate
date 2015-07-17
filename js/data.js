@@ -1,4 +1,3 @@
-
 var cssnext = require('cssnext')
 
 module.exports = {
@@ -8,4 +7,3 @@ module.exports = {
     '/about'
   ]
 }
-

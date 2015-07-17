@@ -1,10 +1,7 @@
-
-var React = require('react')
-var Router = require('react-router')
-var RouteHandler = Router.RouteHandler
-var Header = require('./Header.jsx')
-
-var css = require('../css/base.css')
+var React        = require('react')
+var RouteHandler = require('react-router').RouteHandler
+var Header       = require('./Header.jsx')
+var css          = require('../css/base.css')
 
 var Root = React.createClass({
   propTypes: {
@@ -29,7 +26,7 @@ var Root = React.createClass({
             id='initial-props'
             type='application/json'
             dangerouslySetInnerHTML={initialProps} />
-          <script src='bundle.js' />
+          <script src='/bundle.js' />
         </body>
       </html>
     )
@@ -41,4 +38,3 @@ function safeStringify (obj) {
 }
 
 module.exports = Root
-
